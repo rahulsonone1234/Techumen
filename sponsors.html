@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>TECHUMEN</title>
+    <style>
+        video {
+  width: 100%;
+  height: auto;
+}
+        body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .1);
+    padding: 120px 0;
+}
+
+/* ********* *\
+    BUTTONS
+\* ********* */
+
+input[type="submit"],
+.button,
+button {
+    font-size: 1.1rem;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.3);
+    color: rgba(0, 0, 0, .3);
+    min-width: 120px;
+    padding: 14px 10px;
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+input[type="submit"]:hover,
+.button:hover,
+button:hover {
+    color: rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+
+/* ******* *\
+    CARDS
+\* ******* */
+
+.card-container {
+    font-family: 'Lato';
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 10px 0 10px;
+}
+
+.card {
+    display: inline-block;
+    max-width: 570px;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    box-shadow: 0 0px 12px 0 rgba(0,0,0,.4);
+    margin-bottom: 25px;
+}
+
+.card__image,
+.card__image img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.card__textContent {
+    display: inline-block;
+    background-color: white;
+    margin: -30px auto 0 auto;
+    width: 80%;
+    padding: 20px 10px;
+}
+
+.card__title {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, .1);
+}
+
+.card__title-main {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card__title-sub {
+    color: rgba(0, 0, 0, .6);
+    font-size: 1.2rem;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.card__content {
+    color: rgba(0, 0, 0, .8);
+    text-align: justify;
+    margin-bottom: 25px;
+    line-height: 1.6rem;
+}
+
+@media screen and (min-width: 1170px) {
+
+    .card-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }    
+
+    .card {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+
+    .card-container {
+        display: block;
+        padding-bottom: 1px;
+    }
+
+    .card {
+        max-width: 1024px;
+        text-align: left;
+        padding: 0;
+        display: flex;
+        margin: 0 auto 25px auto;
+    }
+
+    .card__image {
+        max-width: 66%;
+        text-align: left;
+        /* This should be changed by JS
+        background-image: url("/images/mountain-3.jpeg"); */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .card__image img {
+        display: none;
+    }
+
+    .card__textContent {
+        display: inline-block;
+        width: 65%;
+        margin: 12px 0 0 -30px;
+        padding: 25px;
+    }
+
+    .card__title {
+        text-align: left;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div><h1 style="text-align:center">Our Sponsors</h1></div>
+    <section class="card-container">
+        <div class="card">
+            <div class="card__image">
+                <img src="codechef.png" alt="mountain">
+            </div>
+            <div class="card__textContent">
+                <div class="card__title">
+                    <div class="card__title-main">CodeChef</div>
+                    <div class="card__title-sub">
+                        A Platform for Aspiring Programmers
+                    </div>
+                </div>
+                <div class="card__content">
+                    
+                    <p>
+                        CodeChef was created as a platform to help programmers make it big in the world of algorithms, computer programming and programming contests. At CodeChef we work hard to revive the geek in you by hosting a programming contest at the start of the month and another smaller programming challenge in the middle of the month. We also aim to have training sessions and discussions related to algorithms, binary search, technicalities like array size and the likes. Apart from providing a platform for programming competitions, CodeChef also has various algorithm tutorials and forum discussions to help those who are new to the world of computer programming.
+                    </p>
+                   
+                </div>
+                <div class="card__button button">CODECHEF</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card__image">
+                <img src="greenfm1.jpg" alt="mountain">
+            </div>
+            <div class="card__textContent">
+                <div class="card__title">
+                    <div class="card__title-main">Green FM</div>
+                    <div class="card__title-sub">
+                        The Best FM Radio station in the sangli
+                    </div>
+                </div>
+                <div class="card__content">
+                    <p>
+                            Green FM 90.4, Vishrambag, Sangli - Radio Broadcasting Services
+
+                            Add Photo
+                             Basement Shiv Pavalion, Sangli Miraj Road, Vishrambag, Sangli - 416416, Near Shiv Pavalion Near Ram Mandir (Map)Radio Broadcasting Serviceswww.greenfmradio.com
+                    </p>
+                </div>
+                <div class="card__button button">GREEN FM</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card__image">
+                <img src="chococraze.jpg" alt="mountain">
+            </div>
+            <div class="card__textContent">
+                <div class="card__title">
+                    <div class="card__title-main">Cafe Choco Craze</div>
+                    <div class="card__title-sub">
+                        The best cafe in the sangli
+                    </div>
+                </div>
+                <div class="card__content">
+                    <p>
+                            Café Chococraze has been offering a wide range of innovative products from premium chocolates, coffees, western food products. We serve the high quality and finest range of Thick Coffee, Chocolick B, Chocolick M also popularly known as Cadbee and Cadmm. A flock of refreshing and mind boggling beverages with an authentic taste. To add to the saga we have variety of lip smacing street food on the menu.
+
+                            We have an overwhelming response from customers all around India, they love our fabulous foods and drinks. Our continuum efforts and approaches in making our product portfolio better will be ongoing.
+                    </p>
+                </div>
+                <div class="card__button button">CAFE CHOCO CRAZE</div>
+            </div>
+        </div>
+
+    </section>
+    <div>
+        <video width="400" controls>
+            <source src="CCDSAP.mp4" type="video/mp4">
+            <source src="" type="video/ogg">
+            Your browser does not support HTML5 video.
+          </video>
+    </div>
+    <div>
+            <video width="400" controls>
+                <source src="chococraze.mp4" type="video/mp4">
+                <source src="" type="video/ogg">
+                Your browser does not support HTML5 video.
+              </video>
+        </div>
+
+    <script>
+        (function(){
+    const divs = document.getElementsByClassName('card__image');
+    for (let i = 0; i < divs.length; i++) {
+        const div = divs[i];
+        const img = div.getElementsByTagName('img')[0]
+                        .getAttribute('src');
+        div.style.backgroundImage = 'url(' + img + ')';
+    }
+}());
+    </script>
+</body>
+</html>
